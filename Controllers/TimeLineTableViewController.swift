@@ -20,10 +20,6 @@ class TimeLineTableViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: .plain, target: self, action: #selector(TimeLineTableViewController.post))
     }
     
-    @objc func post() {
-        print("投稿ボタンを押しました")
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,7 +48,11 @@ class TimeLineTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
-
+    
+    @objc func post() {
+        let tweet = Tweet(text: textField.text!)
+        tweet.save()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
