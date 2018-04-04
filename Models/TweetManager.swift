@@ -14,6 +14,7 @@ class TweetManager: NSObject {
     
     func fetchTweets(callback: @escaping () -> Void) {
         let query = NCMBQuery(className: "Tweet")
+        query?.order(byDescending: "createDate")
         query?.findObjectsInBackground { (objects, error) in
             if error == nil {
                 self.tweets = []
