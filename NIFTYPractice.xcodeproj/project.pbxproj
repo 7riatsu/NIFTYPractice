@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7CA5579120746922000CDDF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5579020746922000CDDF8 /* AppDelegate.swift */; };
-		7CA5579320746922000CDDF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5579220746922000CDDF8 /* ViewController.swift */; };
 		7CA5579620746922000CDDF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5579420746922000CDDF8 /* Main.storyboard */; };
 		7CA5579920746922000CDDF8 /* NIFTYPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5579720746922000CDDF8 /* NIFTYPractice.xcdatamodeld */; };
 		7CA5579B20746922000CDDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5579A20746922000CDDF8 /* Assets.xcassets */; };
 		7CA5579E20746922000CDDF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5579C20746922000CDDF8 /* LaunchScreen.storyboard */; };
 		7CA557A920746923000CDDF8 /* NIFTYPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557A820746923000CDDF8 /* NIFTYPracticeTests.swift */; };
 		7CA557B420746923000CDDF8 /* NIFTYPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557B320746923000CDDF8 /* NIFTYPracticeUITests.swift */; };
+		7CA557C220746A9A000CDDF8 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA557C120746A99000CDDF8 /* NCMB.framework */; };
+		7CA557C920747CE3000CDDF8 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557C720747CE3000CDDF8 /* TweetTableViewCell.swift */; };
+		7CA557CA20747CE3000CDDF8 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA557C820747CE3000CDDF8 /* TweetTableViewCell.xib */; };
+		7CA557CC20747D1F000CDDF8 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */; };
+		7CA557CE20748217000CDDF8 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CD20748217000CDDF8 /* Tweet.swift */; };
+		7CA557D02074822B000CDDF8 /* TweetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CF2074822B000CDDF8 /* TweetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		7CA5578D20746922000CDDF8 /* NIFTYPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIFTYPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA5579020746922000CDDF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CA5579220746922000CDDF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CA5579520746922000CDDF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA5579820746922000CDDF8 /* NIFTYPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NIFTYPractice.xcdatamodel; sourceTree = "<group>"; };
 		7CA5579A20746922000CDDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,13 @@
 		7CA557AF20746923000CDDF8 /* NIFTYPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIFTYPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA557B320746923000CDDF8 /* NIFTYPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIFTYPracticeUITests.swift; sourceTree = "<group>"; };
 		7CA557B520746923000CDDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA557C120746A99000CDDF8 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NCMB.framework; sourceTree = "<group>"; };
+		7CA557C320746AC4000CDDF8 /* NIFTYPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NIFTYPractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		7CA557C720747CE3000CDDF8 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		7CA557C820747CE3000CDDF8 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
+		7CA557CD20748217000CDDF8 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		7CA557CF2074822B000CDDF8 /* TweetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA557C220746A9A000CDDF8 /* NCMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +91,14 @@
 		7CA5578420746922000CDDF8 = {
 			isa = PBXGroup;
 			children = (
+				7CA557C620747CAD000CDDF8 /* Views */,
+				7CA557C520747CA3000CDDF8 /* Controllers */,
+				7CA557C420747C37000CDDF8 /* Models */,
 				7CA5578F20746922000CDDF8 /* NIFTYPractice */,
 				7CA557A720746923000CDDF8 /* NIFTYPracticeTests */,
 				7CA557B220746923000CDDF8 /* NIFTYPracticeUITests */,
 				7CA5578E20746922000CDDF8 /* Products */,
+				7CA557C120746A99000CDDF8 /* NCMB.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				7CA5579020746922000CDDF8 /* AppDelegate.swift */,
-				7CA5579220746922000CDDF8 /* ViewController.swift */,
 				7CA5579420746922000CDDF8 /* Main.storyboard */,
 				7CA5579A20746922000CDDF8 /* Assets.xcassets */,
 				7CA5579C20746922000CDDF8 /* LaunchScreen.storyboard */,
 				7CA5579F20746922000CDDF8 /* Info.plist */,
 				7CA5579720746922000CDDF8 /* NIFTYPractice.xcdatamodeld */,
+				7CA557C320746AC4000CDDF8 /* NIFTYPractice-Bridging-Header.h */,
 			);
 			path = NIFTYPractice;
 			sourceTree = "<group>";
@@ -126,6 +142,32 @@
 				7CA557B520746923000CDDF8 /* Info.plist */,
 			);
 			path = NIFTYPracticeUITests;
+			sourceTree = "<group>";
+		};
+		7CA557C420747C37000CDDF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CA557CD20748217000CDDF8 /* Tweet.swift */,
+				7CA557CF2074822B000CDDF8 /* TweetManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CA557C520747CA3000CDDF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CA557C620747CAD000CDDF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CA557C720747CE3000CDDF8 /* TweetTableViewCell.swift */,
+				7CA557C820747CE3000CDDF8 /* TweetTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +280,7 @@
 				7CA5579E20746922000CDDF8 /* LaunchScreen.storyboard in Resources */,
 				7CA5579B20746922000CDDF8 /* Assets.xcassets in Resources */,
 				7CA5579620746922000CDDF8 /* Main.storyboard in Resources */,
+				7CA557CA20747CE3000CDDF8 /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA5579320746922000CDDF8 /* ViewController.swift in Sources */,
 				7CA5579920746922000CDDF8 /* NIFTYPractice.xcdatamodeld in Sources */,
+				7CA557CE20748217000CDDF8 /* Tweet.swift in Sources */,
 				7CA5579120746922000CDDF8 /* AppDelegate.swift in Sources */,
+				7CA557CC20747D1F000CDDF8 /* TimeLineTableViewController.swift in Sources */,
+				7CA557C920747CE3000CDDF8 /* TweetTableViewCell.swift in Sources */,
+				7CA557D02074822B000CDDF8 /* TweetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +477,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NIFTYPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nariatsu.NIFTYPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NIFTYPractice/NIFTYPractice-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,10 +496,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = NIFTYPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nariatsu.NIFTYPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NIFTYPractice/NIFTYPractice-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
