@@ -11,9 +11,12 @@ import UIKit
 class TimeLineTableViewController: UITableViewController {
     @IBOutlet weak var textField: UITextField!
     
+    let tweetManager = TweetManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
+        tweetManager.fetchTweets()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,11 +37,14 @@ class TimeLineTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return tweetManager.tweets.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath)as! TweetTableViewCell
+        let tweet = tweetManager.tweets[indexPath.row]
+        cell.nameLabel.text = "けいた"
+        cell.tweetLabel.text = tweet.text
 
         // Configure the cell...
 

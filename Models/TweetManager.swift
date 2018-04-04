@@ -11,4 +11,18 @@ import UIKit
 class TweetManager: NSObject {
     static let sharedInstance = TweetManager()
     var tweets: [Tweet] = []
+    
+    func fetchTweets() {
+        let query = NCMBQuery(className: "Tweet")
+        query?.findObjectsInBackground { (objects, error) in
+            if error == nil {
+                self.tweets = []
+                for object in objects! {
+                    let text = (object as AnyObject).object(forKey: "text") as! String
+                    let tweet = Tweet(text: text)
+                    self.tweets.append(tweet)
+                }
+            }
+        }
+    }
 }
