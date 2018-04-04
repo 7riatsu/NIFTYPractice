@@ -15,12 +15,13 @@ class Tweet: NSObject {
         self.text = text
     }
     
-    func save() {
+    func save(callback: @escaping () -> Void) {
         let tweetObject = NCMBObject(className: "Tweet")
         tweetObject?.setObject(text, forKey: "text")
         tweetObject?.saveInBackground { (error) in
             if error == nil {
                 print("保存完了！")
+                callback()
             }
         }
     }

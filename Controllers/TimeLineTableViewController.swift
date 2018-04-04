@@ -16,7 +16,9 @@ class TimeLineTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
-        tweetManager.fetchTweets()
+        tweetManager.fetchTweets { () in
+            self.tableView.reloadData()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +59,11 @@ class TimeLineTableViewController: UITableViewController {
     
     @objc func post() {
         let tweet = Tweet(text: textField.text!)
-        tweet.save()
+        tweet.save { () in
+            self.tweetManager.fetchTweets { ()  in
+                self.tableView.reloadData()
+            }
+        }
     }
     /*
     // Override to support conditional editing of the table view.

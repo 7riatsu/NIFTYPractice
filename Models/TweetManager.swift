@@ -12,7 +12,7 @@ class TweetManager: NSObject {
     static let sharedInstance = TweetManager()
     var tweets: [Tweet] = []
     
-    func fetchTweets() {
+    func fetchTweets(callback: @escaping () -> Void) {
         let query = NCMBQuery(className: "Tweet")
         query?.findObjectsInBackground { (objects, error) in
             if error == nil {
@@ -21,6 +21,7 @@ class TweetManager: NSObject {
                     let text = (object as AnyObject).object(forKey: "text") as! String
                     let tweet = Tweet(text: text)
                     self.tweets.append(tweet)
+                    callback()
                 }
             }
         }
