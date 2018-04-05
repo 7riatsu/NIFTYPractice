@@ -53,7 +53,7 @@ class TimeLineTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath)as! TweetTableViewCell
         let tweet = tweetManager.tweets[indexPath.row]
-        cell.nameLabel.text = "けいた"
+        cell.nameLabel.text = tweet.user?.name
         cell.tweetLabel.text = tweet.text
 
         // Configure the cell...

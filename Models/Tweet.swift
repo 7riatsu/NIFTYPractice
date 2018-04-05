@@ -10,6 +10,7 @@ import UIKit
 
 class Tweet: NSObject {
     var text: String
+    var user: User?
     
     init(text: String) {
         self.text = text
@@ -18,6 +19,7 @@ class Tweet: NSObject {
     func save(callback: @escaping () -> Void) {
         let tweetObject = NCMBObject(className: "Tweet")
         tweetObject?.setObject(text, forKey: "text")
+        tweetObject?.setObject(NCMBUser.current(), forKey: "user")
         tweetObject?.saveInBackground { (error) in
             if error == nil {
                 print("保存完了！")
