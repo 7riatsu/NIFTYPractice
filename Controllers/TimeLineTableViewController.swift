@@ -23,6 +23,7 @@ class TimeLineTableViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿", style: .plain, target: self, action: #selector(TimeLineTableViewController.post))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(TimeLineTableViewController.logout))
     }
     
     override func didReceiveMemoryWarning() {
@@ -65,6 +66,13 @@ class TimeLineTableViewController: UITableViewController {
             }
         }
     }
+    
+    @objc func logout() {
+        NCMBUser.logOut()
+        performSegue(withIdentifier: "modalLoginViewController", sender: self)
+        
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
