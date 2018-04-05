@@ -20,6 +20,7 @@
 		7CA557CC20747D1F000CDDF8 /* TimeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */; };
 		7CA557CE20748217000CDDF8 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CD20748217000CDDF8 /* Tweet.swift */; };
 		7CA557D02074822B000CDDF8 /* TweetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557CF2074822B000CDDF8 /* TweetManager.swift */; };
+		7CA557D22075034C000CDDF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA557D12075034C000CDDF8 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewController.swift; sourceTree = "<group>"; };
 		7CA557CD20748217000CDDF8 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		7CA557CF2074822B000CDDF8 /* TweetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetManager.swift; sourceTree = "<group>"; };
+		7CA557D12075034C000CDDF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				7CA557CB20747D1F000CDDF8 /* TimeLineTableViewController.swift */,
+				7CA557D12075034C000CDDF8 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA557D22075034C000CDDF8 /* LoginViewController.swift in Sources */,
 				7CA5579920746922000CDDF8 /* NIFTYPractice.xcdatamodeld in Sources */,
 				7CA557CE20748217000CDDF8 /* Tweet.swift in Sources */,
 				7CA5579120746922000CDDF8 /* AppDelegate.swift in Sources */,
