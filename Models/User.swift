@@ -27,4 +27,11 @@ class User: NSObject {
             
         }
     }
+    
+    func login(callback: @escaping (_ message: String?) -> Void) {
+        NCMBUser.logInWithUsername(inBackground: self.name, password: self.password) { (user, error) in
+            let nserror = error as NSError?
+            callback(_ : nserror?.userInfo["NSLocalizedDescription"] as? String)
+        }
+    }
 }

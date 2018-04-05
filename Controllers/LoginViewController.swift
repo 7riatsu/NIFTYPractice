@@ -24,6 +24,14 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func tapLoginButton(_ sender: UIButton) {
+        let user = User(name: nameTextField.text!, password: passwordTextField.text!)
+        user.login { (message) in
+            if let unwrappedMessage = message {
+                self.showAlert(message: unwrappedMessage)
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     @IBAction func tapSignUpButton(_ sender: UIButton) {
         let user = User(name: nameTextField.text!, password: passwordTextField.text!)
