@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
                 self.showAlert(message: unwrappedMessage)
                 print("サインアップ失敗")
             } else {
+                self.dismiss(animated: true, completion: nil)
                 print("サインアップ成功")
             }
         }
